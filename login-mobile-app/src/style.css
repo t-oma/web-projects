@@ -1,0 +1,139 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+:root {
+    --color-background: #000000;
+    --color-foreground: #efefef;
+    --color-foreground-accent: #a4a4a4;
+
+    --font-size-2xs: 0.703125rem; /* 11.25px */
+    --font-size-xs: 0.708125rem; /* 11.33px */
+    --font-size-sm: 0.895625rem; /* 14.33px */
+    --font-size-md: 1.12rem; /* 17.92px */
+    --font-size-xl: 2.520625rem; /* 40.33px */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    justify-content: center;
+    gap: 1rem;
+
+    font-family: "Poppins", sans-serif;
+    color: var(--color-foreground);
+}
+
+@media (width >= 1024px) {
+    body {
+        flex-direction: row;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-background);
+
+    max-width: 430px;
+    width: 100%;
+    min-height: 932px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-page {
+}
+
+.register-page {
+}
+
+.page__illustration {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    object-position: left;
+}
+
+.page__illustration--login {
+    max-width: 432px;
+    max-height: 393px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.page__illustration--register {
+    max-width: 337.99px;
+    max-height: 238px;
+    top: 8px;
+    left: 147px;
+}
+
+.page__register--object-1 {
+    position: absolute;
+    width: 101.81px;
+    height: 68.53px;
+    left: 345px;
+    top: -37px;
+    rotate: -18.69deg;
+    z-index: 10;
+}
+
+.page__register--object-2 {
+    position: absolute;
+    left: -26px;
+    top: 234px;
+    rotate: -66.77deg;
+    z-index: 10;
+}
+
+.page__register--object-2 {
+    position: absolute;
+    left: -26px;
+    top: 234px;
+    rotate: -66.77deg;
+    z-index: 10;
+}
+
+.page__content {
+    position: absolute;
+    width: 447px;
+    top: 244px;
+    left: -1px;
+    bottom: 0;
+
+    backdrop-filter: blur(80px);
+    border-radius: 59px;
+    overflow: hidden;
+}
+
+.page__content--gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right bottom,
+        #b379df 0%,
+        rgba(204 88 84 / 0.08) 77%,
+        #b379df 100%
+    );
+    opacity: 20%;
+    pointer-events: none;
+    z-index: -1;
+}
