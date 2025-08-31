@@ -1,0 +1,42 @@
+.page__illustration--register {
+    max-width: 337.99px;
+    max-height: 238px;
+    top: 8px;
+    left: 147px;
+}
+
+.page__register--object-1 {
+    position: absolute;
+    width: 101.81px;
+    height: 68.53px;
+    left: 345px;
+    top: -37px;
+    rotate: -18.69deg;
+    z-index: 10;
+}
+
+.page__register--object-2 {
+    position: absolute;
+    left: -26px;
+    top: 234px;
+    rotate: -66.77deg;
+    z-index: 10;
+}
+
+.page__register--object-3 {
+    position: absolute;
+    width: 101.81px;
+    height: 68.53px;
+    left: 348px;
+    top: 283px;
+    rotate: -18.69deg;
+    z-index: 10;
+}
+
+.page__register--object-4 {
+    position: absolute;
+    left: -14px;
+    top: -24px;
+    rotate: -33.41deg;
+    z-index: 10;
+}
