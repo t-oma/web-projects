@@ -1,0 +1,12 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 314px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.auth-form__input {
+    border-radius: 10px;
+}

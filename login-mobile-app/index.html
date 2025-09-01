@@ -21,49 +21,94 @@
         >
     </head>
     <body>
-        <section class="page page__login">
+        <section class="page page--login">
             <h2 class="visually-hidden">Login Page</h2>
             <img
                 src="/assets/login-illustration.svg"
                 alt="Login Page Illustration"
                 class="page__illustration page__illustration--login"
             >
-            <img
-                src="/assets/saly-bottom.png"
-                alt="Object 1"
-                class="saly-bottom saly-bottom--on-top"
-            >
-            <div class="page__content">
-                <div class="page__content--gradient"></div>
+            <div class="page__fixed-objects">
+                <img
+                    src="/assets/blur-circle.png"
+                    alt="Blurred Circle"
+                    class="blur-circle"
+                >
+                <img
+                    src="/assets/circle-square.png"
+                    alt="Circle and square objects"
+                    class="circle-square"
+                >
+                <img
+                    src="/assets/saly-bottom.png"
+                    alt="Object 1"
+                    class="saly-bottom saly-bottom--on-top"
+                >
+            </div>
+            <div class="page__body">
+                <div class="page__body--gradient"></div>
+
+                <div class="page__content">
+                    <header class="page__header">
+                        <!-- eslint-disable-next-line html/no-multiple-h1 -->
+                        <h1 class="page__title">Welcome Back!</h1>
+                        <p class="page__subtitle">welcome back we missed you</p>
+                    </header>
+
+                    <form class="auth-form">
+                        <label class="auth-form__label">
+                            Username
+                            <input
+                                type="text"
+                                placeholder="Username"
+                                class="auth-form__input"
+                            >
+                        </label>
+                        <label class="auth-form__label">
+                            Password
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                class="auth-form__input"
+                            >
+                        </label>
+                        <button
+                            type="submit"
+                            class="auth-form__button"
+                        >
+                            Login
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
-        <section class="page page__register">
+        <section class="page page--register">
             <h2 class="visually-hidden">Register Page</h2>
             <img
                 src="/assets/register-Illustration.svg"
                 alt="Register Page Illustration"
                 class="page__illustration page__illustration--register"
             >
-            <div>
+            <div class="page__fixed-objects">
                 <img
-                    src="/assets/register-object-1.png"
+                    src="/assets/circle-square.png"
                     alt="Object 1"
-                    class="page__register--object-1"
+                    class="page__object-1"
                 >
                 <img
-                    src="/assets/register-object-2.png"
-                    alt="Object 2"
-                    class="page__register--object-2"
+                    src="/assets/blur-circle.png"
+                    alt="Blurred Circle"
+                    class="blur-circle"
                 >
                 <img
-                    src="/assets/register-object-1.png"
-                    alt="Object 1"
-                    class="page__register--object-3"
+                    src="/assets/circle-square.png"
+                    alt="Circle and square objects"
+                    class="circle-square"
                 >
                 <img
                     src="/assets/register-object-3.png"
                     alt="Object 1"
-                    class="page__register--object-4"
+                    class="page__object-4"
                 >
                 <img
                     src="/assets/saly-bottom.png"
@@ -71,8 +116,17 @@
                     class="saly-bottom"
                 >
             </div>
-            <div class="page__content">
-                <div class="page__content--gradient"></div>
+            <div class="page__body">
+                <div class="page__body--gradient"></div>
+                <div class="page__content">
+                    <header class="page__header">
+                        <!-- eslint-disable-next-line html/no-multiple-h1 -->
+                        <h1 class="page__title">Get Started Free</h1>
+                        <p class="page__subtitle">
+                            Free Forever. No Credit Card Needed
+                        </p>
+                    </header>
+                </div>
             </div>
         </section>
     </body>
