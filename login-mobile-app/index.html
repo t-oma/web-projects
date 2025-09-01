@@ -56,22 +56,58 @@
                     </header>
 
                     <form class="auth-form">
-                        <label class="auth-form__label">
+                        <label class="auth-form__label poppins-medium">
                             Username
-                            <input
-                                type="text"
-                                placeholder="Username"
-                                class="auth-form__input"
-                            >
+
+                            <div class="auth-form__input-wrapper">
+                                <div
+                                    class="auth-form__input-wrapper--gradient"
+                                ></div>
+                                <div class="auth-form__icon-wrapper">
+                                    <img
+                                        src="assets/user.svg"
+                                        alt="Username Icon"
+                                        class="auth-form__icon"
+                                    >
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="Username"
+                                    name="username"
+                                    class="auth-form__input"
+                                >
+                            </div>
                         </label>
                         <label class="auth-form__label">
                             Password
-                            <input
-                                type="password"
-                                placeholder="Password"
-                                class="auth-form__input"
-                            >
+
+                            <div class="auth-form__input-wrapper">
+                                <div
+                                    class="auth-form__input-wrapper--gradient"
+                                ></div>
+                                <div class="auth-form__icon-wrapper">
+                                    <img
+                                        src="assets/password.svg"
+                                        alt="Password Icon"
+                                        class="auth-form__icon"
+                                    >
+                                </div>
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    name="password"
+                                    class="auth-form__input"
+                                >
+                            </div>
                         </label>
+                        <div class="auth-form__actions">
+                            <a
+                                href="#/password-reset"
+                                class="auth-form__reset-password"
+                            >
+                                Forgot password?
+                            </a>
+                        </div>
                         <button
                             type="submit"
                             class="auth-form__button"
