@@ -9,6 +9,7 @@
 
 .auth-form__label {
     font-size: var(--font-size-sm);
+    font-weight: 500;
     color: var(--color-foreground-accent);
     display: flex;
     flex-direction: column;
@@ -67,7 +68,7 @@
     inset: 0;
     background: linear-gradient(
         80deg,
-        rgba(255 255 255) 0%,
+        rgba(255 255 255 / 1) 0%,
         rgba(255 255 255 / 0.22) 77%,
         rgba(255 255 255 / 0) 100%
     );
@@ -78,11 +79,9 @@
 }
 
 .auth-form__icon-wrapper {
+    position: absolute;
     height: 100%;
     padding: 0 20px;
-    border-radius: 8px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -97,9 +96,8 @@
 .auth-form__input {
     border-radius: 8px;
     border: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    background-color: transparent;
+    background: transparent;
+    padding: 0 57px;
     width: 100%;
     height: 100%;
     outline: none;
@@ -110,6 +108,37 @@
         font-size: var(--font-size-sm);
         font-family: "Poppins", sans-serif;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.auth-form__input-info {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.auth-form__input-action {
+    padding: 0 20px;
+}
+
+.auth-form__input-button {
+    border: none;
+    background: transparent;
+    transition: transform 0.15s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .auth-form__button {
@@ -117,6 +146,7 @@
     border: none;
     color: #ffffff;
     font-size: var(--font-size-md);
+    font-weight: 500;
     padding: 12px 0;
     width: 100%;
     background: linear-gradient(to right, #9c3fe4 0%, #c65647 100%);
@@ -132,6 +162,7 @@
 .auth-form__reset-password {
     color: var(--color-foreground-accent);
     font-size: var(--font-size-xs);
+    font-weight: 500;
     text-decoration: none;
 
     &:hover {
