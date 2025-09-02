@@ -69,6 +69,11 @@ h6 {
     text-wrap: balance;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 /*
   10. Create a root stacking context
 */
