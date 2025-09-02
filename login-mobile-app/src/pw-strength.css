@@ -1,0 +1,69 @@
+:root {
+    --pw-weak: #ff8a6b;
+    --pw-medium: #ffd26b;
+    --pw-strong: #6ee78a;
+    --pw-empty: rgba(255 255 255 / 0.12);
+    --pw-label-color: rgba(255 255 255 / 0.85);
+}
+
+.pw-strength {
+    padding: 0 10px;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.pw-strength__bars {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.pw-strength__bar {
+    display: inline-block;
+    width: 11px;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--pw-empty);
+    transition:
+        background-color 0.18s ease,
+        transform 0.18s ease;
+    transform-origin: left center;
+}
+
+.pw-strength__bar.active {
+    transform: scaleX(1.05);
+}
+
+.pw-strength__label {
+    font-size: var(--font-size-3xs);
+    color: var(--pw-label-color);
+    font-weight: 500;
+}
+
+.pw-strength.level-1 {
+    .pw-strength__bar:nth-child(1) {
+        background: var(--pw-weak);
+    }
+
+    .pw-strength__label {
+        color: var(--pw-weak);
+    }
+}
+.pw-strength.level-2 {
+    .pw-strength__bar:nth-child(-n + 2) {
+        background: var(--pw-medium);
+    }
+
+    .pw-strength__label {
+        color: var(--pw-medium);
+    }
+}
+.pw-strength.level-3 {
+    .pw-strength__bar:nth-child(-n + 3) {
+        background: var(--pw-strong);
+    }
+
+    .pw-strength__label {
+        color: var(--pw-strong);
+    }
+}
