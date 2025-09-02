@@ -6,6 +6,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         >
+        <meta
+            name="description"
+            content="Login and Register pages"
+        >
         <title>Login and Register pages</title>
         <link
             rel="preload"
@@ -48,6 +52,11 @@
         >
     </head>
     <body>
+        <script
+            src="src/auth-methods.js"
+            type="module"
+        ></script>
+
         <section class="page page--login">
             <h2 class="visually-hidden">Login Page</h2>
             <img
@@ -86,7 +95,9 @@
                         <label class="auth-form__label">
                             Username
 
-                            <div class="auth-form__input-wrapper">
+                            <div
+                                class="auth-form__input-wrapper gradient-overlay gradient-border"
+                            >
                                 <div class="auth-form__icon-wrapper">
                                     <img
                                         src="assets/user.svg"
@@ -105,7 +116,9 @@
                         <label class="auth-form__label">
                             Password
 
-                            <div class="auth-form__input-wrapper">
+                            <div
+                                class="auth-form__input-wrapper gradient-overlay gradient-border"
+                            >
                                 <div class="auth-form__icon-wrapper">
                                     <img
                                         src="assets/password.svg"
@@ -150,6 +163,14 @@
                             Login
                         </button>
                     </form>
+                    <div class="form-divider">
+                        <div class="form-divider__border-left"></div>
+                        <span class="form-divider__text">
+                            Or continue with
+                        </span>
+                        <div class="form-divider__border-right"></div>
+                    </div>
+                    <auth-methods></auth-methods>
                 </div>
             </div>
         </section>
@@ -202,7 +223,9 @@
                         <label class="auth-form__label">
                             Email
 
-                            <div class="auth-form__input-wrapper">
+                            <div
+                                class="auth-form__input-wrapper gradient-overlay gradient-border"
+                            >
                                 <div class="auth-form__icon-wrapper">
                                     <img
                                         src="assets/email.svg"
@@ -221,7 +244,9 @@
                         <label class="auth-form__label">
                             Username
 
-                            <div class="auth-form__input-wrapper">
+                            <div
+                                class="auth-form__input-wrapper gradient-overlay gradient-border"
+                            >
                                 <div class="auth-form__icon-wrapper">
                                     <img
                                         src="assets/user.svg"
@@ -240,7 +265,9 @@
                         <label class="auth-form__label">
                             Password
 
-                            <div class="auth-form__input-wrapper">
+                            <div
+                                class="auth-form__input-wrapper gradient-overlay gradient-border"
+                            >
                                 <div class="auth-form__icon-wrapper">
                                     <img
                                         src="assets/password.svg"
@@ -293,6 +320,14 @@
                             Login
                         </button>
                     </form>
+                    <div class="form-divider">
+                        <div class="form-divider__border-left"></div>
+                        <span class="form-divider__text">
+                            Or sign up with
+                        </span>
+                        <div class="form-divider__border-right"></div>
+                    </div>
+                    <auth-methods></auth-methods>
                 </div>
             </div>
         </section>
