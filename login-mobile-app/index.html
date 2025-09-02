@@ -8,6 +8,29 @@
         >
         <title>Login and Register pages</title>
         <link
+            rel="preload"
+            as="image"
+            href="assets/register-Illustration.svg"
+        >
+        <link
+            rel="preload"
+            as="image"
+            href="assets/login-illustration.svg"
+        >
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        >
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        >
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        >
+        <link
             rel="stylesheet"
             href="src/style.css"
         >
@@ -18,6 +41,10 @@
         <link
             rel="stylesheet"
             href="src/login.css"
+        >
+        <link
+            rel="stylesheet"
+            href="src/pw-strength.css"
         >
     </head>
     <body>
@@ -56,7 +83,7 @@
                     </header>
 
                     <form class="auth-form">
-                        <label class="auth-form__label poppins-medium">
+                        <label class="auth-form__label">
                             Username
 
                             <div class="auth-form__input-wrapper">
@@ -98,6 +125,20 @@
                                     name="password"
                                     class="auth-form__input"
                                 >
+                                <div
+                                    class="auth-form__input-info auth-form__input-action"
+                                >
+                                    <button
+                                        type="button"
+                                        class="auth-form__input-button"
+                                    >
+                                        <img
+                                            src="assets/show-password.svg"
+                                            alt="Show password icon"
+                                            class="auth-form__icon"
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </label>
                         <div class="auth-form__actions">
@@ -162,8 +203,115 @@
                             Free Forever. No Credit Card Needed
                         </p>
                     </header>
+
+                    <form class="auth-form">
+                        <label class="auth-form__label">
+                            Email
+
+                            <div class="auth-form__input-wrapper">
+                                <div
+                                    class="auth-form__input-wrapper--gradient"
+                                ></div>
+                                <div class="auth-form__icon-wrapper">
+                                    <img
+                                        src="assets/email.svg"
+                                        alt="Email Icon"
+                                        class="auth-form__icon"
+                                    >
+                                </div>
+                                <input
+                                    type="email"
+                                    placeholder="youremail@example.com"
+                                    name="email"
+                                    class="auth-form__input"
+                                >
+                            </div>
+                        </label>
+                        <label class="auth-form__label">
+                            Username
+
+                            <div class="auth-form__input-wrapper">
+                                <div
+                                    class="auth-form__input-wrapper--gradient"
+                                ></div>
+                                <div class="auth-form__icon-wrapper">
+                                    <img
+                                        src="assets/user.svg"
+                                        alt="Username Icon"
+                                        class="auth-form__icon"
+                                    >
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="Username"
+                                    name="username"
+                                    class="auth-form__input"
+                                >
+                            </div>
+                        </label>
+                        <label class="auth-form__label">
+                            Password
+
+                            <div class="auth-form__input-wrapper">
+                                <div
+                                    class="auth-form__input-wrapper--gradient"
+                                ></div>
+                                <div class="auth-form__icon-wrapper">
+                                    <img
+                                        src="assets/password.svg"
+                                        alt="Password Icon"
+                                        class="auth-form__icon"
+                                    >
+                                </div>
+                                <input
+                                    id="registerPassword"
+                                    type="password"
+                                    placeholder="Password"
+                                    name="password"
+                                    class="auth-form__input"
+                                >
+                                <div
+                                    id="pwStrength"
+                                    class="auth-form__input-info pw-strength"
+                                >
+                                    <div
+                                        id="pwStrengthBars"
+                                        class="pw-strength__bars"
+                                    >
+                                        <span class="pw-strength__bar"></span>
+                                        <span class="pw-strength__bar"></span>
+                                        <span class="pw-strength__bar"></span>
+                                    </div>
+                                    <span
+                                        id="pwStrengthLabel"
+                                        class="pw-strength__label"
+                                    >
+                                        None
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="auth-form__actions">
+                            <a
+                                href="#/password-reset"
+                                class="auth-form__reset-password"
+                            >
+                                Forgot password?
+                            </a>
+                        </div>
+                        <button
+                            type="submit"
+                            class="auth-form__button"
+                        >
+                            Login
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
+        <script
+            src="src/pw-strength.js"
+            type="module"
+        ></script>
     </body>
 </html>
