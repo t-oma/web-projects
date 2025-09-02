@@ -3,6 +3,8 @@
 @import url("forms.css");
 @import url("page.css");
 @import url("utils.css");
+@import url("auth-methods.css");
+@import url("form-divider.css");
 
 :root {
     --color-background: #000000;
