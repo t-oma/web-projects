@@ -9,6 +9,7 @@
     --color-foreground: #efefef;
     --color-foreground-accent: #a4a4a4;
 
+    --font-size-3xs: 0.653125rem; /* 10.45px */
     --font-size-2xs: 0.703125rem; /* 11.25px */
     --font-size-xs: 0.708125rem; /* 11.33px */
     --font-size-sm: 0.895625rem; /* 14.33px */
@@ -33,6 +34,10 @@ body {
     body {
         flex-direction: row;
     }
+}
+
+button {
+    cursor: pointer;
 }
 
 .blur-circle {
