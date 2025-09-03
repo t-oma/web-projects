@@ -28,7 +28,28 @@
 
     backdrop-filter: blur(80px);
     border-radius: 59px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%) translateX(-50%);
+        width: 397px;
+        height: 397px;
+        background: radial-gradient(
+            circle,
+            rgba(196 86 71 / 1) 0%,
+            rgba(210 90 99 / 0) 65%,
+            rgba(0 0 0 / 0) 100%
+        );
+        opacity: 0.4;
+        pointer-events: none;
+        z-index: 0;
+    }
 }
 
 .page__body--gradient {
@@ -43,6 +64,18 @@
     opacity: 0.2;
     pointer-events: none;
     z-index: -1;
+}
+
+.page__gradient-radial_pos_rt {
+    top: 0;
+    right: 0;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.page__gradient-radial_pos_rb {
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%) translateX(50%);
 }
 
 .page__content {

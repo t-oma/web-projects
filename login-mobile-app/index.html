@@ -1,42 +1,42 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
-        >
+        />
         <meta
             name="description"
             content="Login and Register pages"
-        >
+        />
         <title>Login and Register pages</title>
         <link
             rel="preload"
             as="image"
             href="assets/register-Illustration.png"
-        >
+        />
         <link
             rel="preload"
             as="image"
             href="assets/login-illustration.png"
-        >
+        />
         <link
             rel="stylesheet"
             href="src/style.css"
-        >
+        />
         <link
             rel="stylesheet"
             href="src/register.css"
-        >
+        />
         <link
             rel="stylesheet"
             href="src/login.css"
-        >
+        />
         <link
             rel="stylesheet"
             href="src/pw-strength.css"
-        >
+        />
     </head>
     <body>
         <script
@@ -54,26 +54,28 @@
                 src="/assets/login-illustration.png"
                 alt="Login Page Illustration"
                 class="page__illustration page__illustration--login"
-            >
+            />
             <div class="page__fixed-objects">
                 <img
                     src="/assets/blur-circle.png"
                     alt="Blurred Circle"
                     class="blur-circle"
-                >
+                />
                 <img
                     src="/assets/circle-square.png"
                     alt="Circle and square objects"
                     class="circle-square"
-                >
+                />
                 <img
                     src="/assets/saly-bottom.png"
                     alt="Object 1"
                     class="saly-bottom saly-bottom--on-top"
-                >
+                />
             </div>
             <div class="page__body">
                 <div class="page__body--gradient"></div>
+                <div class="page__gradient-radial_pos_rt gradient-radial"></div>
+                <div class="page__gradient-radial_pos_rb gradient-radial"></div>
 
                 <div class="page__content">
                     <header class="page__header">
@@ -94,14 +96,14 @@
                                         src="assets/user.svg"
                                         alt="Username Icon"
                                         class="auth-form__icon"
-                                    >
+                                    />
                                 </div>
                                 <input
                                     type="text"
                                     placeholder="Username"
                                     name="username"
                                     class="auth-form__input"
-                                >
+                                />
                             </div>
                         </label>
                         <label class="auth-form__label">
@@ -115,14 +117,14 @@
                                         src="assets/password.svg"
                                         alt="Password Icon"
                                         class="auth-form__icon"
-                                    >
+                                    />
                                 </div>
                                 <input
                                     type="password"
                                     placeholder="Password"
                                     name="password"
                                     class="auth-form__input"
-                                >
+                                />
                                 <div
                                     class="auth-form__input-info auth-form__input-action"
                                 >
@@ -134,7 +136,7 @@
                                             src="assets/show-password.svg"
                                             alt="Show password icon"
                                             class="auth-form__icon"
-                                        >
+                                        />
                                     </button>
                                 </div>
                             </div>
@@ -165,36 +167,39 @@
                 src="/assets/register-Illustration.png"
                 alt="Register Page Illustration"
                 class="page__illustration page__illustration--register"
-            >
+            />
             <div class="page__fixed-objects">
                 <img
                     src="/assets/circle-square.png"
                     alt="Object 1"
                     class="page__object-1"
-                >
+                />
                 <img
                     src="/assets/blur-circle.png"
                     alt="Blurred Circle"
                     class="blur-circle"
-                >
+                />
                 <img
                     src="/assets/circle-square.png"
                     alt="Circle and square objects"
                     class="circle-square"
-                >
+                />
                 <img
                     src="/assets/register-object-3.png"
                     alt="Object 1"
                     class="page__object-4"
-                >
+                />
                 <img
                     src="/assets/saly-bottom.png"
                     alt="Object 1"
                     class="saly-bottom"
-                >
+                />
             </div>
             <div class="page__body">
                 <div class="page__body--gradient"></div>
+                <div class="page__gradient-radial_pos_rt gradient-radial"></div>
+                <div class="page__gradient-radial_pos_rb gradient-radial"></div>
+
                 <div class="page__content">
                     <header class="page__header">
                         <!-- eslint-disable-next-line html/no-multiple-h1 -->
@@ -216,14 +221,14 @@
                                         src="assets/email.svg"
                                         alt="Email Icon"
                                         class="auth-form__icon"
-                                    >
+                                    />
                                 </div>
                                 <input
                                     type="email"
                                     placeholder="youremail@example.com"
                                     name="email"
                                     class="auth-form__input"
-                                >
+                                />
                             </div>
                         </label>
                         <label class="auth-form__label">
@@ -237,14 +242,14 @@
                                         src="assets/user.svg"
                                         alt="Username Icon"
                                         class="auth-form__icon"
-                                    >
+                                    />
                                 </div>
                                 <input
                                     type="text"
                                     placeholder="Username"
                                     name="username"
                                     class="auth-form__input"
-                                >
+                                />
                             </div>
                         </label>
                         <label class="auth-form__label">
@@ -258,7 +263,7 @@
                                         src="assets/password.svg"
                                         alt="Password Icon"
                                         class="auth-form__icon"
-                                    >
+                                    />
                                 </div>
                                 <input
                                     id="registerPassword"
@@ -267,7 +272,7 @@
                                     name="password"
                                     aria-describedby="pwStrengthLabel"
                                     class="auth-form__input"
-                                >
+                                />
                                 <div
                                     id="pwStrength"
                                     aria-live="polite"
