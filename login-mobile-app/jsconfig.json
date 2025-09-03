@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowJs": true,
+        "module": "ESNext",
+        "target": "ES2024",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "strict": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/**/*.js",
+        "types/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ]
+}
