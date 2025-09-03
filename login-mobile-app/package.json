@@ -1,0 +1,28 @@
+{
+    "name": "login-mobile-app",
+    "version": "1.0.0",
+    "description": "Login and Register pages for mobile app",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "http-server ./ -p 8080"
+    },
+    "keywords": [
+        "login",
+        "register",
+        "mobile",
+        "app",
+        "html",
+        "css",
+        "js"
+    ],
+    "author": "Levchenko Artem",
+    "license": "ISC",
+    "packageManager": "pnpm@10.15.0",
+    "devDependencies": {
+        "prettier": "^3.6.2"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
+    }
+}
