@@ -43,6 +43,10 @@
             src="src/auth-methods.js"
             type="module"
         ></script>
+        <script
+            src="src/form-divider.js"
+            type="module"
+        ></script>
 
         <section class="page page--login">
             <h2 class="visually-hidden">Login Page</h2>
@@ -150,13 +154,7 @@
                             Login
                         </button>
                     </form>
-                    <div class="form-divider">
-                        <div class="form-divider__border-left"></div>
-                        <span class="form-divider__text">
-                            Or continue with
-                        </span>
-                        <div class="form-divider__border-right"></div>
-                    </div>
+                    <form-divider></form-divider>
                     <auth-methods></auth-methods>
                 </div>
             </div>
@@ -307,13 +305,7 @@
                             Login
                         </button>
                     </form>
-                    <div class="form-divider">
-                        <div class="form-divider__border-left"></div>
-                        <span class="form-divider__text">
-                            Or sign up with
-                        </span>
-                        <div class="form-divider__border-right"></div>
-                    </div>
+                    <form-divider></form-divider>
                     <auth-methods></auth-methods>
                 </div>
             </div>
