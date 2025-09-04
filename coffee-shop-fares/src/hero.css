@@ -100,6 +100,7 @@
 }
 
 .hero__achievements {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,6 +127,12 @@
     @media (width >= 64rem /* 1024px */) {
         font-size: var(--font-size-base);
     }
+}
+
+.hero__stars {
+    position: absolute;
+    top: 25%;
+    left: -10%;
 }
 
 .hero__product {
