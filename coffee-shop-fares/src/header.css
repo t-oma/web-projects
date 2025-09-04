@@ -17,6 +17,19 @@
 }
 
 .header__nav-item {
+    position: relative;
+}
+
+.header__nav-item--active {
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 20px;
+        background-color: var(--color-foreground);
+        z-index: 5;
+    }
 }
 
 .header__nav-link {
